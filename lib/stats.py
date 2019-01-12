@@ -85,7 +85,7 @@ class Stats:
 
         
 def main():
-    s = Stats(1,3,9,10)
+    s = Stats()
     s.print_values()
 
 
