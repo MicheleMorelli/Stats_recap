@@ -19,7 +19,8 @@ def get_number():
         num (int): an integer
         num (nil): if "" is passed via the input
     Raises:
-        ValueError: if anything other than a num or "" is entered as input
+        TypeError, ValueError: if anything other than a num or "" is entered 
+        as input
     """
     num = input("Please enter a number:")
     if not num: return 
