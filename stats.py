@@ -68,10 +68,11 @@ class Stats:
                     getattr(self, attr)()
                     )
                     )
+        print()
 
         
 def main():
-    s = Stats(34,234,23,234,342,34,54)
+    s = Stats()
     s.print_values()
 
 
