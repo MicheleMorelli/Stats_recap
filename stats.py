@@ -3,6 +3,7 @@ Testing stats functions
 '''
 
 import sys
+from helper.py import *
 
 
 class Stats:
@@ -13,21 +14,6 @@ class Stats:
 
     def mean(self):
         pass
-
-def get_numeric_series():
-    nums = []
-    inp = get_number()
-    while (inp != ""):
-        nums.append(inp)
-        inp = get_number()
-    return nums
-
-def get_number():
-    try:
-        return int(input("Please enter a number:"))
-    except (TypeError, ValueError) as e:
-        print("Not a Number. Please enter a number.")
-        get_number()
 
 def main():
     s = Stats()
