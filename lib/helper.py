@@ -2,9 +2,9 @@
 
 
 def get_numeric_series():
-    """Creates a list of ints a list of ints
+    """Creates a list of numbers (float)
     Returns:
-        [nums]: a list of integers
+        [nums]: a list of numbers
     """
     nums = []
     inp = get_number()
@@ -16,7 +16,7 @@ def get_numeric_series():
 def get_number():
     """Reads a number from the standard input and returns it
     Returns:
-        num (int): an integer
+        num (float): an float
         num (nil): if "" is passed via the input
     Raises:
         TypeError, ValueError: if anything other than a num or "" is entered 
@@ -25,7 +25,7 @@ def get_number():
     num = input("Please enter a number:")
     if not num: return 
     try:
-        return int(num)
+        return float(num)
     except (TypeError,ValueError) as e:
         print("Not a Number. Please enter a number.")
         get_number()

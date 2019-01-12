@@ -19,7 +19,7 @@ class Stats:
         if (len(args)):
             self.n = args
         elif (len(sys.argv) > 1):
-            self.n = [int(x) for x in sys.argv[1:]]
+            self.n = [float(x) for x in sys.argv[1:]]
         else:
             self.n = get_numeric_series()
         print("Stats Class initialised!")
