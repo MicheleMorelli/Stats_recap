@@ -22,9 +22,9 @@ def get_number():
         ValueError: if anything other than a num or "" is entered as input
     """
     num = input("Please enter a number:")
-    return if !num 
+    if not num: return 
     try:
         return int(num)
-    except (ValueError) as e:
+    except (TypeError,ValueError) as e:
         print("Not a Number. Please enter a number.")
         get_number()

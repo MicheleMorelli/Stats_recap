@@ -3,7 +3,7 @@ Testing stats functions
 '''
 
 import sys
-from helper.py import *
+from helper import *
 
 
 class Stats:
