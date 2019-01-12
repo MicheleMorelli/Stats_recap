@@ -1,15 +1,13 @@
 """Playing with some basic stats functions to refresh them!"""
 
+import re, sys, math
+
+import symbols
 from helper import *
-import re
-import sys
-import math
 
 class Stats:
     # UTF-compatible math symbols as a reminder for myself:-)
-    variance_sym = "\u03C3\u00B2"
-    standard_deviation_sym = "\u03C3"
-    mean_sym = "\u03BC"
+    symbol = symbols.create_dictionary()
     
     def __init__(self,*args): 
         """Stats class constructor
@@ -60,7 +58,7 @@ class Stats:
         for attr in dir(self):
             if (not re.match(r'^func_*', attr )): continue
             func_name = re.sub(r'^func_',"", attr)
-            sym = getattr(Stats, func_name.lower() + "_sym") 
+            sym = Stats.symbol[func_name] 
             func_name = re.sub(r'_', " ",func_name) # for printing
             print("{} (symbol: {}): {:.2f}"\
                     .format(func_name.capitalize(), \
