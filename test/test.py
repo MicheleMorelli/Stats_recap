@@ -17,6 +17,14 @@ def test_mean2():
     s = Stats(*range(1,1010))
     assert s.func_mean() == numpy.mean(list(range(1,1010)))  
 
+def test_median():
+    s = Stats(*range(1,10))
+    assert s.func_median() == numpy.median(list(range(1,10)))  
+
+
+def test_median2():
+    s = Stats(*range(1,1010))
+    assert s.func_median() == numpy.median(list(range(1,1010)))  
 
 def test_variance():
     s = Stats(*range(1,1010))

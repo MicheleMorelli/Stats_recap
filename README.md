@@ -9,6 +9,7 @@ Just to make sure that everything is working as it should, I used numpy's method
 
 Currently it shows the following functions:
 - Arithmetic mean
+- Median
 - Variance
 - Standard Deviation
 

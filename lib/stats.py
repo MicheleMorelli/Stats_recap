@@ -20,7 +20,7 @@ class Stats:
             self.n = [float(x) for x in sys.argv[1:]]
         else:
             self.n = get_numeric_series()
-        print("Stats Class initialised!")
+       # print("Stats Class initialised!")
 
 
     def func_mean(self):
@@ -29,7 +29,22 @@ class Stats:
             mean (float): the mean value
         """
         return sum(self.n) / len(self.n)
-   
+    
+    
+    def func_median(self):
+        """Calculates the median of the n list of numbers
+        Returns:
+            median (float): the median value of the series
+        """
+        series = sorted(self.n)
+        if (len(series) == 1):
+            return series[0]
+        elif (len(series) % 2):
+            return series[(len(series) - 1) // 2]
+        else:
+            mid = len(series) // 2 
+            return Stats(*series[mid-1:mid + 1]).func_mean()
+
 
     def func_variance(self):
         """Calculates the variance of the n list of numbers
@@ -70,7 +85,7 @@ class Stats:
 
         
 def main():
-    s = Stats()
+    s = Stats(1,3,9,10)
     s.print_values()
 
 
