@@ -118,7 +118,7 @@ class Stats:
             d_summation (float): the double summation of all the values in 
                 the dataset
         """
-        return "WIP"
+        return self.func_summation() * len(self.n)
 
 
     def print_values(self):
