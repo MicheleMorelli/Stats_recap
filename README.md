@@ -1,5 +1,14 @@
 # Basic Statistical Functions #
 ### by Michele Morelli ###
+.
+├── lib
+│   ├── helper.py
+│   ├── stats.py ---> (This is the main class!)
+│   └── symbols.py ---> (A small dictionary of Symbols)
+├── LICENCE.txt
+├── README.md
+└── test 
+    └── test.py ---> (all the pytests are here)
 
 The new term is approaching, and I found myself refreshing some statistics for the upcoming modules.
 
