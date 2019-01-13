@@ -3,12 +3,12 @@
 .\
 ├── lib\
 │   ├── helper.py\
-│   ├── stats.py ---><span style="color:red"> (This is the main class!)</span>\
+│   ├── stats.py ---> (This is the main class!)\
 │   └── symbols.py ---> (A small dictionary of Symbols)\
 ├── LICENCE.txt\
 ├── README.md\
 └── test\
-   └── test.py ---> (all the pytests are here)\
+&nbsp;&nbsp;&nbsp;&nbsp;└── test.py ---> (all the pytests are here)\
 
 The new term is approaching, and I found myself refreshing some statistics for the upcoming modules.
 
