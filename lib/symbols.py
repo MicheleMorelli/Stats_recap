@@ -13,5 +13,7 @@ def create_dictionary():
             "small":"min",
             "range": "[min,max]",
             "summation":"\u2211",
-            "double_summation":"\u2211"*2
+            "double_summation":"\u2211"*2,
+            "kurtosis":"\u03B2\u2082",
+            "skewness":"\u03B3\u2081",
             }

@@ -120,6 +120,22 @@ class Stats:
         """
         return self.func_summation() * len(self.n)
 
+    
+    def func_kurtosis(self):
+        """
+        Returns:
+            kurtosis (float): the summation of all the values in the dataset
+        """
+        return "TODO"
+
+
+    def func_skewness(self):
+        """
+        Returns:
+            skewness (float): the summation of all the values in the dataset
+        """
+        return "TODO"
+
 
     def print_values(self):
         """
