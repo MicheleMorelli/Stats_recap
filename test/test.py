@@ -69,7 +69,7 @@ def test_mode():
 def test_summation():
     n = [1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2] 
     s = Stats(*n)
-    assert s.func_summation() == sum(*n)
+    assert s.func_summation() == sum(n)
 
 
 def test_double_summation():
