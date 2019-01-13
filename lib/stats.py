@@ -64,19 +64,27 @@ class Stats:
     
     
     def func_large(self):
-        pass
+        return 0
 
 
     def func_small(self):
-        pass
+        return 0
 
 
     def func_range(self):
-        pass
+        return 0
 
 
     def func_mode(self):
-        pass
+        return 0
+
+    
+    def func_summation(self):
+        return 0
+
+
+    def func_double_summation(self):
+        return 0
 
 
     def print_values(self):

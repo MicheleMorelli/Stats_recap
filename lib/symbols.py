@@ -7,5 +7,11 @@ def create_dictionary():
             "variance": "\u03C3\u00B2",
             "standard_deviation": "\u03C3",
             "mean": "\u03BC",
-            "median": "M"
+            "median": "M",
+            "mode": "Mo",
+            "large":"max",
+            "small":"min",
+            "range": "[min,max]",
+            "summation":"\u2211",
+            "double_summation":"\u2211"*2
             }
