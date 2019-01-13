@@ -135,7 +135,15 @@ class Stats:
             skewness (float): the amount of asymmetry of distribution
             of the dataset
         """
-        return "TODO"
+        total_summation = 0
+        for i in self.n:
+            partial_sum = i - self.func_mean()
+            partial_sum /= self.func_standard_deviation()
+            partial_sum **= 3
+            total_summation += partial_sum
+        total_summation /= len(self.n)
+        return total_summation
+
 
 
     def print_values(self):

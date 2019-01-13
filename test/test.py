@@ -89,4 +89,4 @@ def test_kurt():
 def test_skew():
     a = [1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2]
     s = Stats(*a)
-    assert s.func_skewness() == scipy.stats.skewness(np.array(a))
+    assert s.func_skewness() == scipy.stats.skew(np.array(a))
