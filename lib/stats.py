@@ -88,7 +88,20 @@ class Stats:
 
 
     def func_mode(self):
-        return 0
+        """
+        Returns:
+            mode (float): the single elements that recurs the most in the 
+            dataset
+        """
+        d = {}
+        for i in self.n:
+            d[i] = d.get(i, 0) + 1
+        maxi = 0
+        for i in d:
+            if (d[i] > maxi):
+                maxi = d[i]
+        mode_lst = list(filter(lambda x: d[x] == maxi, d.keys()))
+        return mode_lst[0] if len(mode_lst) == 1 else "N/A"
 
     
     def func_summation(self):
