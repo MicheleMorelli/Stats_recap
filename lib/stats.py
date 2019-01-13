@@ -105,7 +105,7 @@ class Stats:
             d_summation (float): the double summation of all the values in 
                 the dataset
         """
-        return 0
+        return "WIP"
 
 
     def print_values(self):
@@ -120,10 +120,14 @@ class Stats:
             func_name = re.sub(r'^func_',"", attr)
             sym = Stats.symbol[func_name] 
             func_name = re.sub(r'_', " ",func_name) # for printing
-            print("{} (symbol: {}): {:.2f}"\
+            value = getattr(self, attr)()
+            value = "{:.2f}".format(value) if isinstance(value,float)\
+                    else str(value)
+
+            print("{} (symbol: {}): {}"\
                     .format(func_name.capitalize(), \
                     sym,\
-                    getattr(self, attr)()
+                    value
                     )
                     )
         print()

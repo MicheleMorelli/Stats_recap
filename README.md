@@ -10,13 +10,13 @@
 └── test\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── test.py ---> (all the pytests are here)\
 
-The new term is approaching, and I found myself refreshing some statistics for the upcoming modules.
+The new university term is approaching, and I found myself refreshing some statistics for the upcoming modules.
 
 I thought it would be a good idea to write down a couple of simple Python methods to help me refresh the basics (and the symbols!).
 
 Just to make sure that everything is working as it should, I used numpy's methods to double-check my functions  in the pytests.
 
-Currently it shows the following functions:
+Given a numeric dataset, currently it shows the following functions:
 - Arithmetic mean
 - Median
 - Variance
