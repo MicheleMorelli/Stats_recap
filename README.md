@@ -8,7 +8,7 @@
 ├── LICENCE.txt\
 ├── README.md\
 └── test\
-&&nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;└── test.py ---> (all the pytests are here)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── test.py ---> (all the pytests are here)\
 
 The new term is approaching, and I found myself refreshing some statistics for the upcoming modules.
 
