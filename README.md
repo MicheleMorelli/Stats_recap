@@ -3,7 +3,7 @@
 .\
 ├── lib\
 │   ├── helper.py\
-│   ├── stats.py ---> (This is the main class!)\
+│   ├── stats.py ---><span style="color:red"> (This is the main class!)</span>\
 │   └── symbols.py ---> (A small dictionary of Symbols)\
 ├── LICENCE.txt\
 ├── README.md\
