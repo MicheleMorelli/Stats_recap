@@ -61,6 +61,22 @@ class Stats:
             standard_deviation (float): the std. deviation value
         """
         return math.sqrt(self.func_variance())
+    
+    
+    def func_large(self):
+        pass
+
+
+    def func_small(self):
+        pass
+
+
+    def func_range(self):
+        pass
+
+
+    def func_mode(self):
+        pass
 
 
     def print_values(self):
