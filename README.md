@@ -12,6 +12,12 @@ Currently it shows the following functions:
 - Median
 - Variance
 - Standard Deviation
+- Summation
+- Double Summation
+- Min
+- Max
+- Range
+- Mode
 
 To run it:
 
