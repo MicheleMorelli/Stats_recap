@@ -126,7 +126,15 @@ class Stats:
         Returns:
             kurtosis (float): the peakedness of the dataset's  distribution
         """
-        return "TODO"
+        kurtosis = 0
+        for i in self.n:
+            partial_sum = i - self.func_mean()
+            partial_sum /= self.func_standard_deviation()
+            partial_sum **= 4
+            kurtosis += partial_sum
+        kurtosis /= len(self.n)
+        kurtosis -= 3
+        return kurtosis
 
 
     def func_skewness(self):
@@ -135,14 +143,14 @@ class Stats:
             skewness (float): the amount of asymmetry of distribution
             of the dataset
         """
-        total_summation = 0
+        skewness = 0
         for i in self.n:
             partial_sum = i - self.func_mean()
             partial_sum /= self.func_standard_deviation()
             partial_sum **= 3
-            total_summation += partial_sum
-        total_summation /= len(self.n)
-        return total_summation
+            skewness += partial_sum
+        skewness /= len(self.n)
+        return skewness
 
 
 

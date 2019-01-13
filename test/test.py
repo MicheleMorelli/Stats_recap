@@ -4,6 +4,7 @@ sys.path.append(os.path.join(sys.path[0],'..','lib'))
 from stats import *
 import numpy as np
 import scipy.stats
+import pytest
 
 """
 Using numpy as an initial benchmark for testing
@@ -83,7 +84,7 @@ def test_double_summation():
 def test_kurt():
     a = [1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2]
     s = Stats(*a)
-    assert s.func_kurtosis() == scipy.stats.kurtosis(np.array(a))
+    assert pytest.approx(s.func_kurtosis(), .1) == scipy.stats.kurtosis(np.array(a))
 
 
 def test_skew():
