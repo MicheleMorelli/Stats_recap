@@ -43,7 +43,7 @@ class Stats:
             return series[(len(series) - 1) // 2]
         else:
             mid = len(series) // 2 
-            return Stats(*series[mid-1:mid + 1]).func_mean()
+            return Stats(*series[mid - 1:mid + 1]).func_mean()
 
 
     def func_variance(self):
@@ -64,15 +64,27 @@ class Stats:
     
     
     def func_large(self):
-        return 0
+        """
+        Returns:
+            large (float): the largest value in the dataset
+        """
+        return max(self.n)
 
 
     def func_small(self):
-        return 0
+        """
+        Returns:0
+            small(float): the smallest value in the dataset
+        """
+        return min(self.n)
 
 
     def func_range(self):
-        return 0
+        """
+        Returns:
+            range (float): the range between min and max
+        """
+        return self.func_large() - self.func_small()
 
 
     def func_mode(self):
@@ -80,11 +92,20 @@ class Stats:
 
     
     def func_summation(self):
-        return 0
+        """
+        Returns:
+            summation (float): the summation of all the values in the dataset
+        """
+        return sum((self.n))
 
 
     def func_double_summation(self):
-        return 0
+        """
+        Returns:
+            d_summation (float): the double summation of all the values in 
+                the dataset
+        """
+        return self.func_summation() * 2
 
 
     def print_values(self):
