@@ -105,7 +105,7 @@ class Stats:
             d_summation (float): the double summation of all the values in 
                 the dataset
         """
-        return self.func_summation() * 2
+        return 0
 
 
     def print_values(self):
