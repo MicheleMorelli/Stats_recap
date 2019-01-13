@@ -124,7 +124,7 @@ class Stats:
     def func_kurtosis(self):
         """
         Returns:
-            kurtosis (float): the summation of all the values in the dataset
+            kurtosis (float): the peakedness of the dataset's  distribution
         """
         return "TODO"
 
@@ -132,7 +132,8 @@ class Stats:
     def func_skewness(self):
         """
         Returns:
-            skewness (float): the summation of all the values in the dataset
+            skewness (float): the amount of asymmetry of distribution
+            of the dataset
         """
         return "TODO"
 

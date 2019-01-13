@@ -3,6 +3,7 @@ import os
 sys.path.append(os.path.join(sys.path[0],'..','lib'))
 from stats import *
 import numpy as np
+import scipy.stats
 
 """
 Using numpy as an initial benchmark for testing
@@ -62,8 +63,9 @@ def test_range():
 
 
 def test_mode():
-    s = Stats(1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2)
-    assert s.func_mode() == 2
+    a = [1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2]
+    s = Stats(*a)
+    assert s.func_mode() == scipy.stats.mode(np.array(a))[0]
 
 
 def test_summation():
