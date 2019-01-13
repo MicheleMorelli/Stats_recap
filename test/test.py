@@ -73,7 +73,7 @@ def test_summation():
 
 
 def test_double_summation():
-    n = [1,2,34,4,2,3,21,1,23,32,2,31,2,2432,234,2] 
+    n = [456,456,456] 
     s = Stats(*n)
-    assert s.func_double_summation() == "TODO"
+    assert s.func_double_summation() == 4104
 
